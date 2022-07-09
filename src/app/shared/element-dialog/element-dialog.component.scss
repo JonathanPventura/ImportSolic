@@ -1,0 +1,18 @@
+.Container{
+  min-width: 600px;
+
+}
+
+.Container .mat-form-field{
+  margin: 10px;
+
+}
+
+.button{
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+.NomeFornec, .EndFornec {
+  width: 35rem;
+}

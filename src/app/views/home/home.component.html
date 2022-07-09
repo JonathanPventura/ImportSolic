@@ -1,0 +1,119 @@
+
+<div class="container">
+  <button class="ButtonCreate" mat-raised-button (click)="OpenModal(null)">
+    <span class="material-icons" >add</span>Add Solicitação
+  </button>
+  <table mat-table #table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="position">
+    <th mat-header-cell *matHeaderCellDef> Nº </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.position}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="NomeEmpresa">
+    <th mat-header-cell *matHeaderCellDef> Nome Empresa </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.NomeEmpresa}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="DtSolic">
+    <th mat-header-cell *matHeaderCellDef> Dt da Solicitação </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.DtSolic}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="DtVenc">
+    <th mat-header-cell *matHeaderCellDef> Dt da Solicitação </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.DtVenc}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="NomeFornec">
+    <th mat-header-cell *matHeaderCellDef> Nome do Fornecedor </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.NomeFornec}} </td>
+  </ng-container>
+  <ng-container matColumnDef="CPFCNPJ">
+    <th mat-header-cell *matHeaderCellDef> CPFCNPJ </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.CPFCNPJ}} </td>
+  </ng-container>
+  <ng-container matColumnDef="EndFornc">
+    <th mat-header-cell *matHeaderCellDef> EndFornc </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.EndFornc}} </td>
+  </ng-container>
+  <ng-container matColumnDef="EndNumbFornc">
+    <th mat-header-cell *matHeaderCellDef> EndNumbFornc </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.EndNumbFornc}} </td>
+  </ng-container>
+  <ng-container matColumnDef="EndCompFornc">
+    <th mat-header-cell *matHeaderCellDef> EndCompFornc </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.EndCompFornc}} </td>
+  </ng-container>
+  <ng-container matColumnDef="EndBairFornc">
+    <th mat-header-cell *matHeaderCellDef> EndBairFornc </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.EndBairFornc}} </td>
+  </ng-container>
+  <ng-container matColumnDef="EndCepFornc">
+    <th mat-header-cell *matHeaderCellDef> EndCepFornc </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.EndCepFornc}} </td>
+  </ng-container>
+  <ng-container matColumnDef="EndCidFornc">
+    <th mat-header-cell *matHeaderCellDef> EndCidFornc </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.EndCidFornc}} </td>
+  </ng-container>
+  <ng-container matColumnDef="HistFornc">
+    <th mat-header-cell *matHeaderCellDef> HistFornc </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.HistFornc}} </td>
+  </ng-container>
+  <ng-container matColumnDef="ValorBruto">
+    <th mat-header-cell *matHeaderCellDef> ValorBruto </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.ValorBruto}} </td>
+  </ng-container>
+  <ng-container matColumnDef="ValorLiq">
+    <th mat-header-cell *matHeaderCellDef> ValorLiq </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.ValorLiq}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Inss">
+    <th mat-header-cell *matHeaderCellDef> Inss </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.Inss}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Iss">
+    <th mat-header-cell *matHeaderCellDef> Iss </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.Iss}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Irrf">
+    <th mat-header-cell *matHeaderCellDef> Irrf </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.Irrf}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Cofinf">
+    <th mat-header-cell *matHeaderCellDef> Cofinf </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.Cofinf}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Csll">
+    <th mat-header-cell *matHeaderCellDef> Csll </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.Csll}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Pis">
+    <th mat-header-cell *matHeaderCellDef> Pis </th>
+    <td mat-cell *matCellDef="let DadosSolic"> {{DadosSolic.Pis}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Acoes">
+    <th mat-header-cell *matHeaderCellDef> Ações </th>
+    <td mat-cell *matCellDef="let DadosSolic">
+      <button mat-icon-button  (click)="EditSolic(DadosSolic)" >
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button (click)="DeleteSolic(DadosSolic.position)" color="primary" >
+        <mat-icon>delete</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+</div>
