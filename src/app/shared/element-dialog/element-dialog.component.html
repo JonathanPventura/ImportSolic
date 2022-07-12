@@ -1,111 +1,115 @@
 <h1 mat-dialog-title *ngIf="!isChange">Nova Solicitação</h1>
 <h1 mat-dialog-title *ngIf="isChange">Editar Solicitação</h1>
 <div class="Container">
+
   <div mat-dialog-content class="ContainerLabel">
-    <mat-form-field appearance="fill" class="Numero">
+    <div class="row">
+    <mat-form-field appearance="fill" class="Numero ">
       <mat-label>Numero</mat-label>
-      <input matInput [(ngModel)]="data.position">
+      <input matInput [(ngModel)]="data.position" >
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="NomeEmpresa">
+    <mat-form-field appearance="fill" class="NomeEmpresa ">
       <mat-label>Nome da Empresa</mat-label>
       <input matInput [(ngModel)]="data.NomeEmpresa">
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="DtSolic">
+    <mat-form-field appearance="fill" class="DtSolic ">
       <mat-label>Data da Solcitação</mat-label>
       <input matInput [(ngModel)]="data.DtSolic" type="date">
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="DtVenc">
+    <mat-form-field appearance="fill" class="DtVenc ">
       <mat-label>Data do Vencimento</mat-label>
       <input matInput [(ngModel)]="data.DtVenc" type="date">
     </mat-form-field>
+  </div>
+  <div class="row">
+      <mat-form-field appearance="fill" class="NomeFornec ">
+        <mat-label>Nome do Fornecedor</mat-label>
+        <input matInput [(ngModel)]="data.NomeFornec">
+      </mat-form-field>
 
-    <mat-form-field appearance="fill" class="NomeFornec">
-      <mat-label>Nome do Fornecedor</mat-label>
-      <input matInput [(ngModel)]="data.NomeFornec">
-    </mat-form-field>
-
-    <mat-form-field appearance="fill" class="CPFCNPJ">
-      <mat-label>CPF / CNPJ</mat-label>
-      <input matInput [(ngModel)]="data.CPFCNPJ">
-    </mat-form-field>
-
-    <mat-form-field appearance="fill" class="EndFornec">
+      <mat-form-field appearance="fill" class="CPFCNPJ ">
+        <mat-label>CPF / CNPJ</mat-label>
+        <input matInput [(ngModel)]="data.CPFCNPJ">
+      </mat-form-field>
+  </div>
+    <mat-form-field appearance="fill" class="EndFornec ">
       <mat-label>End Fornecedor</mat-label>
       <input matInput [(ngModel)]="data.EndFornc">
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="EndNumbFornc">
+    <mat-form-field appearance="fill" class="EndNumbFornc ">
       <mat-label>End Numero Fornecedor</mat-label>
       <input matInput [(ngModel)]="data.EndNumbFornc">
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="EndCompFornc">
+    <mat-form-field appearance="fill" class="EndCompFornc ">
       <mat-label>End Compl Fornecedor</mat-label>
       <input matInput [(ngModel)]="data.EndCompFornc">
     </mat-form-field>
-
-    <mat-form-field appearance="fill" class="EndBairFornc">
+    <div class="row">
+    <mat-form-field appearance="fill" class="EndBairFornc ">
       <mat-label>End Bairro Fornecedor</mat-label>
       <input matInput [(ngModel)]="data.EndBairFornc">
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="EndCepFornc">
+    <mat-form-field appearance="fill" class="EndCepFornc ">
       <mat-label>End Cep Fornecedor</mat-label>
       <input matInput [(ngModel)]="data.EndCepFornc" type="number">
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="EndCidFornc">
+    <mat-form-field appearance="fill" class="EndCidFornc ">
       <mat-label>End Cid Fornecedor</mat-label>
       <input matInput [(ngModel)]="data.EndCidFornc">
     </mat-form-field>
-
-    <mat-form-field appearance="fill" class="HistFornc">
+    </div>
+    <mat-form-field appearance="fill" class="HistFornc ">
       <mat-label>Historico</mat-label>
       <input matInput [(ngModel)]="data.HistFornc">
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="ValorBruto">
+    <mat-form-field appearance="fill" class="ValorBruto ">
       <mat-label>Valor Bruto</mat-label>
       <input matInput [(ngModel)]="data.ValorBruto" type="number">
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="ValorLiq" type="number">
+    <mat-form-field appearance="fill" class="ValorLiq " type="number">
       <mat-label>Valor Liquido</mat-label>
       <input matInput [(ngModel)]="data.ValorLiq">
     </mat-form-field>
-
-    <mat-form-field appearance="fill" class="Inss" type="number">
+    <div class="rowImposto">
+    <mat-form-field appearance="fill" class="Inss TamanhoImposto" type="number">
       <mat-label>INSS</mat-label>
       <input matInput [(ngModel)]="data.Inss">
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="Iss" type="number">
+    <mat-form-field appearance="fill" class="Iss TamanhoImposto" type="number">
       <mat-label>ISS</mat-label>
       <input matInput [(ngModel)]="data.Iss">
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="Irrf" type="number">
+    <mat-form-field appearance="fill" class="Irrf TamanhoImposto" type="number">
       <mat-label>IRRF</mat-label>
       <input matInput [(ngModel)]="data.Irrf">
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="Cofins" type="number">
+    <mat-form-field appearance="fill" class="Cofins TamanhoImposto" type="number">
       <mat-label>COFINS</mat-label>
       <input matInput [(ngModel)]="data.Cofins">
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="Csll" type="number">
+    <mat-form-field appearance="fill" class="Csll TamanhoImposto" type="number">
       <mat-label>CSLL</mat-label>
       <input matInput [(ngModel)]="data.Csll">
     </mat-form-field>
 
-    <mat-form-field appearance="fill" class="Pis" type="number">
+    <mat-form-field appearance="fill" class="Pis TamanhoImposto" type="number">
       <mat-label>PIS</mat-label>
       <input matInput [(ngModel)]="data.Pis" type="number">
     </mat-form-field>
+  </div>
 
 
   </div>

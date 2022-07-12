@@ -13,6 +13,27 @@
   flex-direction: row-reverse;
 
 }
-.NomeFornec, .EndFornec {
+.NomeFornec, .EndFornec,.HistFornc {
   width: 35rem;
+}
+.NomeFornec{
+  width: 60%;
+}
+.CPFCNPJ, .tamanho{
+  width: 40%;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+
+}
+.rowImposto{
+  display: flex;
+  flex-direction: row;
+ flex-wrap: wrap;
+  width: 100%;
+}
+.TamanhoImposto{
+  width: 35%;
 }

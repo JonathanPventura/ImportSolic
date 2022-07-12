@@ -1,7 +1,7 @@
 export interface Dados {
   position: number;
   NomeEmpresa: string;
-  DtSolic: number;
+  DtSolic: string;
   DtVenc: string;
   NomeFornec: string;
   CPFCNPJ: number;

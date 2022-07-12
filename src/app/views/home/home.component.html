@@ -109,6 +109,8 @@
       <button mat-icon-button (click)="DeleteSolic(DadosSolic.position)" color="primary" >
         <mat-icon>delete</mat-icon>
       </button>
+ 
+
     </td>
   </ng-container>
 
@@ -116,4 +118,7 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
+<button mat-icon-button (click)="baixar()" color="primary" >
+  <mat-icon>download</mat-icon>
+</button>
 </div>
