@@ -8,12 +8,12 @@ import { ngxCsv } from 'ngx-csv/ngx-csv';
 
 
 const DADOS_DATA: Dados[] = [
-  {position: 1, NomeEmpresa: 'Sinaf 24h', DtSolic: '2022-07-09', DtVenc: '' , NomeFornec: 'a', CPFCNPJ: 0 , EndFornc: '', EndNumbFornc: 0, EndCompFornc : '', EndBairFornc:'', EndCepFornc: 0, EndCidFornc:'',HistFornc: '', ValorBruto: 0 , ValorLiq: 0 , Inss: 0 , Iss:0 , Irrf: 0, Cofins: 0, Csll: 0 , Pis: 0,},
-  {position: 2, NomeEmpresa: 'Casa Bom Pastor', DtSolic: '2022-07-09', DtVenc: '', NomeFornec: 'a', CPFCNPJ: 0 , EndFornc: '', EndNumbFornc: 0, EndCompFornc : '', EndBairFornc:'', EndCepFornc: 0, EndCidFornc:'',HistFornc: '', ValorBruto: 0 , ValorLiq: 0 , Inss: 0 , Iss:0 , Irrf: 0, Cofins: 0, Csll: 0 , Pis: 0,},
-  {position: 3, NomeEmpresa: 'Vital Latina', DtSolic: '2022-07-09', DtVenc: '', NomeFornec: 'a', CPFCNPJ: 0 , EndFornc: '', EndNumbFornc: 0, EndCompFornc : '', EndBairFornc:'', EndCepFornc: 0, EndCidFornc:'',HistFornc: '', ValorBruto: 0 , ValorLiq: 0 , Inss: 0 , Iss:0 , Irrf: 0, Cofins: 0, Csll: 0 , Pis: 0,},
-  {position: 4, NomeEmpresa: 'Sinaf seguros', DtSolic: '2022-07-09', DtVenc: '', NomeFornec: 'a', CPFCNPJ: 0 , EndFornc: '', EndNumbFornc: 0, EndCompFornc : '', EndBairFornc:'', EndCepFornc: 0, EndCidFornc:'',HistFornc: '', ValorBruto: 0 , ValorLiq: 0 , Inss: 0 , Iss:0 , Irrf: 0, Cofins: 0, Csll: 0 , Pis: 0,},
-  {position: 5, NomeEmpresa: 'Uni', DtSolic: '2022-07-09', DtVenc: '', NomeFornec: 'a', CPFCNPJ: 0 , EndFornc: '', EndNumbFornc: 0, EndCompFornc : '', EndBairFornc:'', EndCepFornc: 0, EndCidFornc:'',HistFornc: '', ValorBruto: 0 , ValorLiq: 0 , Inss: 0 , Iss:0 , Irrf: 0, Cofins: 0, Csll: 0 , Pis: 0,},
-  {position: 6, NomeEmpresa: 'Uni Filial', DtSolic: '2022-07-09', DtVenc: '', NomeFornec: 'a', CPFCNPJ: 0 , EndFornc: '', EndNumbFornc: 0, EndCompFornc : '', EndBairFornc:'', EndCepFornc: 0, EndCidFornc:'',HistFornc: '', ValorBruto: 0 , ValorLiq: 0 , Inss: 0 , Iss:0 , Irrf: 0, Cofins: 0, Csll: 0 , Pis: 0,},
+  {id:1,position: 1, NomeEmpresa: 'Sinaf 24h', DtSolic: '2022-07-09', DtVenc: '' , NomeFornec: 'a', CPFCNPJ: 0 , EndFornc: '', EndNumbFornc: 0, EndCompFornc : '', EndBairFornc:'', EndCepFornc: 0, EndCidFornc:'',HistFornc: '', ValorBruto: 0 , ValorLiq: 0 , Inss: 0 , Iss:0 , Irrf: 0, Cofins: 0, Csll: 0 , Pis: 0,},
+  {id:2,position: 2, NomeEmpresa: 'Casa Bom Pastor', DtSolic: '2022-07-09', DtVenc: '', NomeFornec: 'a', CPFCNPJ: 0 , EndFornc: '', EndNumbFornc: 0, EndCompFornc : '', EndBairFornc:'', EndCepFornc: 0, EndCidFornc:'',HistFornc: '', ValorBruto: 0 , ValorLiq: 0 , Inss: 0 , Iss:0 , Irrf: 0, Cofins: 0, Csll: 0 , Pis: 0,},
+  {id:3,position: 3, NomeEmpresa: 'Vital Latina', DtSolic: '2022-07-09', DtVenc: '', NomeFornec: 'a', CPFCNPJ: 0 , EndFornc: '', EndNumbFornc: 0, EndCompFornc : '', EndBairFornc:'', EndCepFornc: 0, EndCidFornc:'',HistFornc: '', ValorBruto: 0 , ValorLiq: 0 , Inss: 0 , Iss:0 , Irrf: 0, Cofins: 0, Csll: 0 , Pis: 0,},
+  {id:4,position: 4, NomeEmpresa: 'Sinaf seguros', DtSolic: '2022-07-09', DtVenc: '', NomeFornec: 'a', CPFCNPJ: 0 , EndFornc: '', EndNumbFornc: 0, EndCompFornc : '', EndBairFornc:'', EndCepFornc: 0, EndCidFornc:'',HistFornc: '', ValorBruto: 0 , ValorLiq: 0 , Inss: 0 , Iss:0 , Irrf: 0, Cofins: 0, Csll: 0 , Pis: 0,},
+  {id:5,position: 5, NomeEmpresa: 'Uni', DtSolic: '2022-07-09', DtVenc: '', NomeFornec: 'a', CPFCNPJ: 0 , EndFornc: '', EndNumbFornc: 0, EndCompFornc : '', EndBairFornc:'', EndCepFornc: 0, EndCidFornc:'',HistFornc: '', ValorBruto: 0 , ValorLiq: 0 , Inss: 0 , Iss:0 , Irrf: 0, Cofins: 0, Csll: 0 , Pis: 0,},
+  {id:6,position: 6, NomeEmpresa: 'Uni Filial', DtSolic: '2022-07-09', DtVenc: '', NomeFornec: 'a', CPFCNPJ: 0 , EndFornc: '', EndNumbFornc: 0, EndCompFornc : '', EndBairFornc:'', EndCepFornc: 0, EndCidFornc:'',HistFornc: '', ValorBruto: 0 , ValorLiq: 0 , Inss: 0 , Iss:0 , Irrf: 0, Cofins: 0, Csll: 0 , Pis: 0,},
 
 ];
 
@@ -36,6 +36,7 @@ export class HomeComponent implements OnInit {
     const dialogRef = this.dialog.open(ElementDialogComponent, {
 
       data: element === null ? {
+        id:null,
         position: null,
         NomeEmpresa: '',
         DtSolic: null,
@@ -57,33 +58,61 @@ export class HomeComponent implements OnInit {
         Cofins:null,
         Csll:null,
         Pis:null,
-      }: element
+      }: {
+        id:element.id,
+        position: element.position,
+        NomeEmpresa: element.NomeEmpresa,
+        DtSolic: element.DtSolic,
+        DtVenc: element.DtVenc,
+        NomeFornec: element.NomeFornec,
+        CPFCNPJ: element.CPFCNPJ,
+        EndFornc: element.EndFornc,
+        EndNumbFornc: element.EndNumbFornc,
+        EndCompFornc: element.EndCompFornc,
+        EndBairFornc: element.EndBairFornc,
+        EndCepFornc: element.EndCepFornc,
+        EndCidFornc: element.EndCidFornc,
+        HistFornc: element.HistFornc,
+        ValorBruto: element.ValorBruto,
+        ValorLiq: element.ValorLiq,
+        Inss:element.Inss,
+        Iss:element.Iss,
+        Irrf:element.Irrf,
+        Cofins:element.Cofins,
+        Csll:element.Csll,
+        Pis:element.Pis,
+      }
     });
 
     dialogRef.afterClosed().subscribe(result => {
       if(result !== undefined){
-        if(this.dataSource.map(p => p.position).includes(result.position)){
-          this.dataSource[result.position -1] = result;
+        if(this.dataSource.map(p => p.id).includes(result.id)){
+          this.dataSource[result.id -1] = result;
           this.table.renderRows();
 
 
         }else{
           console.log(result);
+
             this.dataSource.push(result);
             this.table.renderRows();
         }
 
 
       }
-
-
-
     });
 
   }
 
+  copy(element: Dados):void{
+   
+    this.dataSource.push(element);
+    this.table.renderRows()
+
+  }
   EditSolic(element: Dados):void{
     this.OpenModal(element);
+
   }
 
 

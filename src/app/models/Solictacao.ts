@@ -20,5 +20,6 @@ export interface Dados {
   Cofins:number;
   Csll:number;
   Pis:number;
+  id:number;
 
 }
